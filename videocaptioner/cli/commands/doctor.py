@@ -51,9 +51,9 @@ def _run_checks(config: dict, *, check_api: bool = False) -> list[Check]:
 
 def _check_python() -> Check:
     version = f"{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}"
-    if (3, 10) <= sys.version_info[:2] < (3, 13):
+    if (3, 10) <= sys.version_info[:2] < (3, 14):
         return Check("python", "ok", f"Python {version}")
-    return Check("python", "error", f"Python {version} is unsupported", "Use Python >=3.10,<3.13")
+    return Check("python", "error", f"Python {version} is unsupported", "Use Python >=3.10,<3.14")
 
 
 def _check_command(name: str, purpose: str) -> Check:

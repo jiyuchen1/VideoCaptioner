@@ -16,7 +16,7 @@ head:
 - **Windows**: Windows 10/11 (64位)
 - **macOS**: macOS 10.15 或更高版本
 - **Linux**: Ubuntu 20.04+ / Debian 11+ / Fedora 35+
-- **Python**: Python 3.10 或更高版本（源码运行时需要）
+- **Python**: Python 3.10 ~ 3.13（源码运行时需要）
 - **内存**: 建议 4GB 以上（使用本地 Whisper 需要 8GB+）
 
 ## 安装方式
